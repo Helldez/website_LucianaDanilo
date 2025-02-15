@@ -4,53 +4,73 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luciana e Danilo si sposano!</title>
-<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto&display=swap" rel="stylesheet">
 <style>
     body {
-        font-family: 'Homemade Apple', cursive; /* Font per l'intera pagina */
-        color: #A99101; /* Nuovo colore del testo */
-        background-color: #FFFFFF; /* Sfondo bianco */
+        font-family: 'Homemade Apple', cursive;
+        color: #A99101;
+        background-color: #FFFFFF;
         margin: 0;
         padding: 0;
     }
     .header {
         text-align: center;
-        padding: 20px;
+        padding: 15px;
     }
     .header h1 {
         margin: 0;
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .content {
         text-align: center;
-        padding: 20px;
+        padding: 15px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
     .content img {
-        width: 100%; /* Rimpicciolire l'immagine */
+        width: 90%;
+        max-width: 1000px;
         height: auto;
-        border-radius: 10px; /* Bordi arrotondati per l'immagine */
-        margin: 0 auto; /* Centra l'immagine orizzontalmente */
+        border-radius: 10px;
+        margin: 0 auto;
     }
-    .message, .iban, .thanks {
-        margin: 40px auto;
+    .message {
+        margin: 30px auto;
         width: 80%;
-        font-family: 'Homemade Apple', cursive; /* Applica Homemade Apple al messaggio e all'IBAN */
-        font-size: 1.5em; /* Aumenta la dimensione del font */
+        font-size: 1.3em;
         text-align: center;
     }
     .iban {
-        white-space: nowrap; /* Impedisce la rottura delle parole */
-        overflow-x: auto; /* Consente lo scorrimento orizzontale se il testo è troppo lungo */
-        font-size: 1em; /* Dimensione specifica per l'IBAN */
+        margin: 30px auto;
+        padding: 15px;
+        white-space: nowrap;
+        overflow-x: auto;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+    .iban p {
+        margin: 5px 0;
     }
     .thanks {
-        font-size: 1.2em; /* Dimensione leggermente più piccola per "Grazie" */
+        margin: 30px auto;
+        font-size: 1.1em;
     }
-    /* Media query per dispositivi con larghezza fino a 600px */
     @media (max-width: 600px) {
+        .header h1 {
+            font-size: 2em;
+        }
+        .message {
+            font-size: 1.1em;
+        }
         .iban {
-            font-size: 0.6em; /* Riduce la dimensione del font per dispositivi mobili */
-            white-space: normal; /* Permette la rottura delle parole su dispositivi mobili */
+            font-size: 1em;
+            white-space: normal;
+            padding: 10px;
+        }
+        .content img {
+            width: 95%;
         }
     }
 </style>
@@ -62,18 +82,15 @@
 <div class="content">
     <img src="Luciana_Danilo.jpeg" alt="Wallpaper matrimonio Luciana e Danilo">
     <div class="message">
-        <p>Il pensiero più bello che possiate farci è essere con noi nel nostro grande giorno</p>
-        <p>ma se gradite farci un regalo, preferiamo metterlo nel salvadanaio e, quando lo useremo in futuro, penseremo con gioia a voi e al vostro bellissimo gesto.</p>
+        <p>Il pensiero più bello che possiate farci è essere con noi nel nostro grande giorno, ma se gradite farci un regalo, preferiamo metterlo nel salvadanaio e, quando lo useremo in futuro, penseremo con gioia a voi e al vostro bellissimo gesto.</p>
         <div class="iban">
-            <p>IBAN: IT87V0301503200000004369387<br>Intestatario: Cavaliere Danilo e Tangari Lucia</p>
+            <p>IBAN: IT87V0301503200000004369387</p>
+            <p>Intestatario: Cavaliere Danilo e Tangari Lucia</p>
         </div>
         <div class="thanks">
-            <p>Grazie ♡</p> <!-- Carattere Unicode per un cuore vuoto -->
+            <p>grazie ♡</p>
         </div>
     </div>
-</div>
-</body>
-</html>
 </div>
 </body>
 </html>
