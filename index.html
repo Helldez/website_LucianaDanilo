@@ -6,111 +6,140 @@
     <title>Luciana e Danilo si sposano!</title>
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        body {
+        /* Reset e stili di base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
             font-family: 'Roboto', sans-serif;
             color: #BFAA48;
             background-color: #F1F0EC;
-            margin: 0;
-            padding: 10px;
-            text-align: center;
+            line-height: 1.6;
         }
-        .logo {
-            width: 260px;
-            margin: 10px auto 5px; /* Ridotto spazio sotto */
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
-        .container {
+        
+        /* Layout generale */
+        .wrapper {
+            padding: 20px 15px;
             max-width: 700px;
             margin: 0 auto;
-            padding: 0;
+            text-align: center;
         }
-        .text-container {
+        
+        /* Logo */
+        .logo {
+            width: 200px;
+            margin: 10px auto 40px;
+        }
+        
+        /* Contenuto */
+        .content {
             max-width: 550px;
             margin: 0 auto;
-            padding: 0 15px;
         }
-        p {
-            margin-top: 10px; /* Ridotto spazio sopra i paragrafi */
-            margin-bottom: 20px;
+        
+        /* Testo principale */
+        .text {
+            font-size: 16px;
+            margin-bottom: 25px;
         }
-        .main-text {
-            font-size: 1.15em;
-            line-height: 1.5;
+        
+        /* Link */
+        .invitation-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #BFAA48;
+            text-decoration: none;
+            font-size: 16px;
+            word-break: break-all;
         }
-        .heart {
-            font-size: 1.5em;
-            margin: 15px 0;
-        }
+        
+        /* Grazie di cuore */
         .thanks {
             font-family: 'Homemade Apple', cursive;
             color: #E9BAAF;
-            font-size: 2.3em;
-            margin: 40px 0;
+            font-size: 36px;
+            margin: 50px 0;
         }
+        
+        /* Sezione IBAN */
+        .iban-section {
+            margin: 30px 0;
+            font-size: 16px;
+        }
+        
+        /* Cuore */
+        .heart {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        
+        /* Nomi */
         .names {
             font-family: 'Homemade Apple', cursive;
             color: #E9BAAF;
-            font-size: 1.7em;
-            margin-top: 25px;
-        }
-        .iban-section {
-            margin: 30px 0;
-            word-break: break-word;
-            font-size: 1.15em; /* Uniformato con il testo principale */
-        }
-        .form-link {
-            display: inline-block;
-            margin: 10px 0;
-            color: #BFAA48;
-            font-size: 1.15em; /* Come il testo principale */
-            text-decoration: none;
+            font-size: 28px;
+            margin: 20px 0;
         }
         
-        /* Media query per dispositivi mobili */
+        /* Media query mobile */
         @media (max-width: 600px) {
+            .wrapper {
+                padding: 15px 10px;
+            }
+            
             .logo {
-                width: 200px; /* Logo più piccolo su mobile */
-                margin: 10px auto 5px;
+                width: 160px;
+                margin-bottom: 30px;
             }
-            .text-container {
-                padding: 0 5px;
+            
+            .text {
+                font-size: 14px;
             }
-            .main-text {
-                font-size: 0.85em; /* Dimensione ridotta ma leggibile */
+            
+            .invitation-link {
+                font-size: 14px;
             }
+            
             .iban-section {
-                font-size: 0.85em; /* Uniformato con il testo */
+                font-size: 14px;
             }
-            .form-link {
-                font-size: 0.85em !important; /* Forza la stessa dimensione del testo */
-                word-break: break-all;
-                display: inline-block;
-            }
+            
             .thanks {
-                font-size: 1.8em; /* Invariato per "grazie di cuore" */
-                margin: 30px 0;
+                font-size: 32px;
+                margin: 40px 0;
             }
+            
             .names {
-                font-size: 1.4em;
+                font-size: 24px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img class="logo" src="Luciana_Danilo.png" alt="Logo LD" />
+    <div class="wrapper">
+        <img class="logo" src="Luciana_Danilo.png" alt="Logo LD">
         
-        <div class="text-container">
-            <p class="main-text">
+        <div class="content">
+            <div class="text">
                 Il grande giorno si avvicina e non vediamo l'ora di condividerlo con tutti voi. Vi chiediamo gentilmente di darci conferma della vostra presenza entro il 1 Maggio 2025, segnalandoci inoltre eventuali allergie ed intolleranze alimentari tramite il seguente link:
-            </p>
+            </div>
             
-            <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" class="form-link">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
+            <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" class="invitation-link">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
             
             <div class="thanks">grazie di cuore!</div>
             
-            <p class="main-text">
+            <div class="text">
                 La vostra presenza sarà per noi il regalo più grande, ma se lo desiderate, potrete contribuire alla realizzazione del nostro viaggio di nozze, aiutandoci a creare ricordi indimenticabili!
-            </p>
+            </div>
             
             <div class="iban-section">
                 IBAN: IT87V0301503200000004369387<br>
