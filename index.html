@@ -19,7 +19,7 @@
             color: #BFAA48;
             background-color: #F1F0EC;
             text-align: center;
-            padding: 15px;
+            padding: 15px 20px; /* Aumentato padding laterale */
             font-size: 16px;
         }
         
@@ -27,12 +27,13 @@
         .container {
             max-width: 600px;
             margin: 0 auto;
+            padding: 0 25px; /* Aggiunto padding laterale */
         }
         
         /* Logo */
         .logo {
             width: 220px;
-            margin: 10px auto 30px;
+            margin: 0px auto 0px;
         }
         
         /* Paragrafi di testo */
@@ -95,22 +96,22 @@
         /* Mobile styles */
         @media (max-width: 600px) {
             body {
-                font-size: 12px;
+                font-size: 14px;
                 padding: 10px;
             }
             
             .logo {
-                width: 180px;
-                margin-bottom: 20px;
+                width: 200px; /* Logo più grande su mobile */
+                margin-bottom: 0px;
             }
             
             .text {
-                font-size: 12px;
+                font-size: 14px;
                 margin-bottom: 15px;
             }
             
             .link {
-                font-size: 12px !important;
+                font-size: 14px !important;
             }
             
             .thanks {
@@ -119,7 +120,8 @@
             }
             
             .iban {
-                font-size: 12px;
+                font-size: 14px; /* Testo IBAN più grande su mobile */
+                margin: 25px auto;
             }
             
             .names {
