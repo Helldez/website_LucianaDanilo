@@ -11,66 +11,85 @@
             color: #BFAA48; /* Colore del testo dalla seconda foto */
             background-color: #F1F0EC; /* Colore dello sfondo dalla terza foto */
             margin: 0;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
         .logo {
-            width: 180px;
-            margin: 0 auto 30px;
+            width: 140px;
+            margin: 10px auto 20px;
         }
         .container {
-            max-width: 700px;
+            max-width: 100%;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
         .main-text {
-            font-size: 1.25em;
+            font-size: 1.15em;
             line-height: 1.5;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .heart {
             font-size: 1.5em;
-            margin: 20px 0;
+            margin: 15px 0;
         }
         .thanks {
             font-family: 'Homemade Apple', cursive;
             color: #E9BAAF; /* Colore rosa salmone per "grazie di cuore" */
-            font-size: 2.5em;
-            margin: 50px 0 30px;
+            font-size: 2.3em;
+            margin: 40px 0 25px;
         }
         .names {
             font-family: 'Homemade Apple', cursive;
             color: #E9BAAF; /* Stesso colore dei nomi */
-            font-size: 1.8em;
-            margin-top: 30px;
+            font-size: 1.7em;
+            margin-top: 25px;
         }
         .iban-section {
-            margin: 40px 0;
+            margin: 30px 0;
+            word-break: break-word;
+        }
+        .form-link {
+            word-break: break-all;
+            display: inline-block;
+            margin: 10px 0;
+            color: #BFAA48;
         }
         @media (max-width: 600px) {
+            body {
+                padding: 5px;
+            }
             .container {
                 padding: 0 10px;
             }
             .main-text {
-                font-size: 1.1em;
+                font-size: 0.95em;
+                line-height: 1.4;
             }
             .thanks {
-                font-size: 2em;
+                font-size: 1.8em;
+                margin: 30px 0 20px;
             }
             .names {
-                font-size: 1.5em;
+                font-size: 1.4em;
+            }
+            .iban-section {
+                font-size: 0.9em;
+            }
+            .logo {
+                width: 120px;
+                margin: 10px auto 15px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img class="logo" src="/api/placeholder/180/180" alt="Logo LD" />
+        <img class="logo" src="Luciana_Danilo.png" alt="Logo LD" />
         
         <div class="main-text">
             Il grande giorno si avvicina e non vediamo l'ora di condividerlo con tutti voi. Vi chiediamo gentilmente di darci conferma della vostra presenza entro il 1 Maggio 2025, segnalandoci inoltre eventuali allergie ed intolleranze alimentari tramite il seguente link:
             <br><br>
-            <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" style="color: #BFAA48;">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
+            <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" class="form-link">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
         </div>
         
         <div class="thanks">grazie di cuore!</div>
