@@ -15,7 +15,7 @@
             text-align: center;
         }
         .logo {
-            width: 220px; /* Ingrandito il logo */
+            width: 250px; /* Logo ancora più grande */
             margin: 10px auto 30px;
         }
         .container {
@@ -24,7 +24,7 @@
             padding: 0 20px;
         }
         .text-container {
-            max-width: 600px;
+            max-width: 550px; /* Più margini laterali */
             margin: 0 auto;
             padding: 0 15px;
         }
@@ -58,7 +58,7 @@
             display: inline-block;
             margin: 10px 0;
             color: #BFAA48;
-            font-size: inherit; /* Stessa dimensione del testo */
+            font-size: 1.15em; /* Stessa dimensione del testo principale */
             text-decoration: none;
         }
         @media (max-width: 600px) {
@@ -70,14 +70,18 @@
             }
             .text-container {
                 padding: 0 10px;
+                max-width: 100%; /* Full width on mobile */
             }
             .logo {
-                width: 160px; /* Ingrandito anche per mobile rispetto a prima */
+                width: 200px; /* Logo ancora più grande su mobile */
                 margin: 10px auto 20px;
             }
             .main-text {
-                font-size: 0.95em;
+                font-size: 0.9em; /* Testo leggermente più piccolo su mobile */
                 line-height: 1.4;
+            }
+            .form-link {
+                font-size: 0.9em; /* Stessa dimensione del testo principale su mobile */
             }
             .thanks {
                 font-size: 1.8em;
