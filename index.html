@@ -7,25 +7,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body {
+            margin: 0;
+            padding: 0; /* Rimosso il padding per ridurre lo spazio in alto */
             font-family: 'Roboto', sans-serif;
             color: #BFAA48; /* Colore del testo dalla seconda foto */
             background-color: #F1F0EC; /* Colore dello sfondo dalla terza foto */
-            margin: 0;
-            padding: 10px;
             text-align: center;
-        }
-        .logo {
-            width: 260px; /* Logo grande */
-            margin: 10px auto 0px; /* Diminuito spazio sotto il logo */
         }
         .container {
             max-width: 700px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 20px; /* Solo padding orizzontale */
+        }
+        .logo {
+            width: 260px;
+            margin: 0 auto; /* Rimosso margine superiore per avvicinare il testo */
+            display: block; /* Per centratura orizzontale corretta */
         }
         .text-container {
-            max-width: 550px; /* Margini laterali */
-            margin: 0 auto;
+            max-width: 550px;
+            margin: 10px auto 0; /* Un leggero margine in alto per separare dal logo */
             padding: 0 15px;
         }
         .main-text {
@@ -41,7 +42,7 @@
             font-family: 'Homemade Apple', cursive;
             color: #E9BAAF; /* Colore rosa salmone per "grazie di cuore" */
             font-size: 2.3em;
-            margin: 60px 0 40px;
+            margin: 40px 0 30px; /* Leggermente ridotto il margine superiore */
         }
         .names {
             font-family: 'Homemade Apple', cursive;
@@ -58,40 +59,35 @@
             display: inline-block;
             margin: 10px 0;
             color: #BFAA48;
-            font-size: 1.15em; /* Stessa dimensione del testo principale */
+            font-size: 1.15em; /* Uguale al testo principale */
             text-decoration: none;
         }
+
         @media (max-width: 600px) {
-            body {
-                padding: 5px;
-            }
             .container {
                 padding: 0 10px;
             }
             .text-container {
                 padding: 0 10px;
-                max-width: 100%; /* Full width on mobile */
-            }
-            .logo {
-                width: 260px;
-                margin: 10px auto 0px; /* Diminuito spazio sotto il logo su mobile */
+                max-width: 100%; /* Full width su mobile */
+                margin-top: 10px; /* Leggero margine in alto */
             }
             .main-text {
-                font-size: 0.7em; /* Testo ancora più piccolo su mobile */
+                font-size: 0.8em; /* Testo più piccolo su mobile */
                 line-height: 1.4;
             }
+            .iban-section {
+                font-size: 0.8em;
+            }
             .form-link {
-                font-size: 0.7em; /* Stessa dimensione del testo principale su mobile */
+                font-size: 0.8em; /* Mantiene la stessa dimensione del main-text su mobile */
             }
             .thanks {
                 font-size: 1.8em; /* "grazie di cuore" resta più grande */
-                margin: 40px 0 30px;
+                margin: 30px 0 25px; /* Ridotto leggermente lo spazio su mobile */
             }
             .names {
                 font-size: 1.4em;
-            }
-            .iban-section {
-                font-size: 0.7em; /* Uniformato con il resto del testo */
             }
         }
     </style>
@@ -99,27 +95,27 @@
 <body>
     <div class="container">
         <img class="logo" src="Luciana_Danilo.png" alt="Logo LD" />
-        
+
         <div class="text-container">
             <div class="main-text">
                 Il grande giorno si avvicina e non vediamo l'ora di condividerlo con tutti voi. Vi chiediamo gentilmente di darci conferma della vostra presenza entro il 1 Maggio 2025, segnalandoci inoltre eventuali allergie ed intolleranze alimentari tramite il seguente link:
                 <br><br>
                 <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" class="form-link">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
             </div>
-            
+
             <div class="thanks">grazie di cuore!</div>
-            
+
             <div class="main-text">
                 La vostra presenza sarà per noi il regalo più grande, ma se lo desiderate, potrete contribuire alla realizzazione del nostro viaggio di nozze, aiutandoci a creare ricordi indimenticabili!
             </div>
-            
+
             <div class="iban-section">
                 IBAN: IT87V0301503200000004369387<br>
                 Cavaliere Danilo e Tangari Lucia
             </div>
-            
+
             <div class="heart">♡</div>
-            
+
             <div class="names">Luciana e Danilo</div>
         </div>
     </div>
