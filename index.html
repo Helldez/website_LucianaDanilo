@@ -6,60 +6,56 @@
     <title>Luciana e Danilo si sposano!</title>
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        /* Reset e stili di base */
+        /* Reset completo */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        html, body {
+        /* Stili di base */
+        body {
             font-family: 'Roboto', sans-serif;
             color: #BFAA48;
             background-color: #F1F0EC;
-            line-height: 1.6;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* Layout generale */
-        .wrapper {
-            padding: 20px 15px;
-            max-width: 700px;
-            margin: 0 auto;
             text-align: center;
+            padding: 15px;
+            font-size: 16px;
+        }
+        
+        /* Container principale */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
         }
         
         /* Logo */
         .logo {
-            width: 200px;
-            margin: 10px auto 40px;
+            width: 220px;
+            margin: 10px auto 30px;
         }
         
-        /* Contenuto */
-        .content {
-            max-width: 550px;
-            margin: 0 auto;
-        }
-        
-        /* Testo principale */
+        /* Paragrafi di testo */
         .text {
+            margin-bottom: 20px;
             font-size: 16px;
-            margin-bottom: 25px;
+            line-height: 1.5;
+            text-align: center;
         }
         
         /* Link */
-        .invitation-link {
+        .link-container {
+            margin: 15px 0 30px;
+            text-align: center;
+        }
+        
+        .link {
             display: inline-block;
-            margin: 20px 0;
             color: #BFAA48;
+            font-size: 16px !important;
             text-decoration: none;
-            font-size: 16px;
-            word-break: break-all;
+            font-weight: normal;
+            font-family: 'Roboto', sans-serif !important;
         }
         
         /* Grazie di cuore */
@@ -67,55 +63,63 @@
             font-family: 'Homemade Apple', cursive;
             color: #E9BAAF;
             font-size: 36px;
-            margin: 50px 0;
+            margin: 40px 0;
+            text-align: center;
         }
         
-        /* Sezione IBAN */
-        .iban-section {
-            margin: 30px 0;
+        /* IBAN */
+        .iban {
+            margin: 30px auto;
+            text-align: center;
+            width: 100%;
             font-size: 16px;
+            line-height: 1.5;
         }
         
         /* Cuore */
         .heart {
             font-size: 24px;
             margin: 20px 0;
+            text-align: center;
         }
         
-        /* Nomi */
+        /* Firma */
         .names {
             font-family: 'Homemade Apple', cursive;
             color: #E9BAAF;
             font-size: 28px;
             margin: 20px 0;
+            text-align: center;
         }
         
-        /* Media query mobile */
+        /* Mobile styles */
         @media (max-width: 600px) {
-            .wrapper {
-                padding: 15px 10px;
+            body {
+                font-size: 12px;
+                padding: 10px;
             }
             
             .logo {
-                width: 160px;
-                margin-bottom: 30px;
+                width: 180px;
+                margin-bottom: 20px;
             }
             
             .text {
-                font-size: 14px;
+                font-size: 12px;
+                margin-bottom: 15px;
             }
             
-            .invitation-link {
-                font-size: 14px;
-            }
-            
-            .iban-section {
-                font-size: 14px;
+            .link {
+                font-size: 12px !important;
             }
             
             .thanks {
                 font-size: 32px;
-                margin: 40px 0;
+                margin: 30px 0;
+            }
+            
+            .iban {
+                font-size: 12px;
             }
             
             .names {
@@ -125,31 +129,43 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         <img class="logo" src="Luciana_Danilo.png" alt="Logo LD">
         
-        <div class="content">
-            <div class="text">
-                Il grande giorno si avvicina e non vediamo l'ora di condividerlo con tutti voi. Vi chiediamo gentilmente di darci conferma della vostra presenza entro il 1 Maggio 2025, segnalandoci inoltre eventuali allergie ed intolleranze alimentari tramite il seguente link:
-            </div>
-            
-            <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" class="invitation-link">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
-            
-            <div class="thanks">grazie di cuore!</div>
-            
-            <div class="text">
-                La vostra presenza sarà per noi il regalo più grande, ma se lo desiderate, potrete contribuire alla realizzazione del nostro viaggio di nozze, aiutandoci a creare ricordi indimenticabili!
-            </div>
-            
-            <div class="iban-section">
-                IBAN: IT87V0301503200000004369387<br>
-                Cavaliere Danilo e Tangari Lucia
-            </div>
-            
-            <div class="heart">♡</div>
-            
-            <div class="names">Luciana e Danilo</div>
+        <p class="text">
+            Il grande giorno si avvicina e non vediamo l'ora di condividerlo con tutti voi. Vi chiediamo gentilmente di darci conferma della vostra presenza entro il 1 Maggio 2025, segnalandoci inoltre eventuali allergie ed intolleranze alimentari tramite il seguente link:
+        </p>
+        
+        <div class="link-container">
+            <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" class="link">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
         </div>
+        
+        <div class="thanks">grazie di cuore!</div>
+        
+        <p class="text">
+            La vostra presenza sarà per noi il regalo più grande, ma se lo desiderate, potrete contribuire alla realizzazione del nostro viaggio di nozze, aiutandoci a creare ricordi indimenticabili!
+        </p>
+        
+        <div class="iban">
+            IBAN: IT87V0301503200000004369387<br>
+            Cavaliere Danilo e Tangari Lucia
+        </div>
+        
+        <div class="heart">♡</div>
+        
+        <div class="names">Luciana e Danilo</div>
     </div>
+    
+    <script>
+        // Questo script assicura che il link abbia le dimensioni corrette
+        document.addEventListener('DOMContentLoaded', function() {
+            const link = document.querySelector('.link');
+            if (window.innerWidth <= 600) {
+                link.style.fontSize = '12px';
+            } else {
+                link.style.fontSize = '16px';
+            }
+        });
+    </script>
 </body>
 </html>
