@@ -15,11 +15,16 @@
             text-align: center;
         }
         .logo {
-            width: 140px;
-            margin: 10px auto 20px;
+            width: 220px; /* Ingrandito il logo */
+            margin: 10px auto 30px;
         }
         .container {
-            max-width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .text-container {
+            max-width: 600px;
             margin: 0 auto;
             padding: 0 15px;
         }
@@ -36,7 +41,7 @@
             font-family: 'Homemade Apple', cursive;
             color: #E9BAAF; /* Colore rosa salmone per "grazie di cuore" */
             font-size: 2.3em;
-            margin: 40px 0 25px;
+            margin: 60px 0 40px;
         }
         .names {
             font-family: 'Homemade Apple', cursive;
@@ -53,6 +58,8 @@
             display: inline-block;
             margin: 10px 0;
             color: #BFAA48;
+            font-size: inherit; /* Stessa dimensione del testo */
+            text-decoration: none;
         }
         @media (max-width: 600px) {
             body {
@@ -61,23 +68,26 @@
             .container {
                 padding: 0 10px;
             }
+            .text-container {
+                padding: 0 10px;
+            }
+            .logo {
+                width: 160px; /* Ingrandito anche per mobile rispetto a prima */
+                margin: 10px auto 20px;
+            }
             .main-text {
                 font-size: 0.95em;
                 line-height: 1.4;
             }
             .thanks {
                 font-size: 1.8em;
-                margin: 30px 0 20px;
+                margin: 40px 0 30px;
             }
             .names {
                 font-size: 1.4em;
             }
             .iban-section {
                 font-size: 0.9em;
-            }
-            .logo {
-                width: 120px;
-                margin: 10px auto 15px;
             }
         }
     </style>
@@ -86,26 +96,28 @@
     <div class="container">
         <img class="logo" src="Luciana_Danilo.png" alt="Logo LD" />
         
-        <div class="main-text">
-            Il grande giorno si avvicina e non vediamo l'ora di condividerlo con tutti voi. Vi chiediamo gentilmente di darci conferma della vostra presenza entro il 1 Maggio 2025, segnalandoci inoltre eventuali allergie ed intolleranze alimentari tramite il seguente link:
-            <br><br>
-            <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" class="form-link">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
+        <div class="text-container">
+            <div class="main-text">
+                Il grande giorno si avvicina e non vediamo l'ora di condividerlo con tutti voi. Vi chiediamo gentilmente di darci conferma della vostra presenza entro il 1 Maggio 2025, segnalandoci inoltre eventuali allergie ed intolleranze alimentari tramite il seguente link:
+                <br><br>
+                <a href="https://forms.gle/vh9Tf4dXTnPx4d4v9" class="form-link">https://forms.gle/vh9Tf4dXTnPx4d4v9</a>
+            </div>
+            
+            <div class="thanks">grazie di cuore!</div>
+            
+            <div class="main-text">
+                La vostra presenza sarà per noi il regalo più grande, ma se lo desiderate, potrete contribuire alla realizzazione del nostro viaggio di nozze, aiutandoci a creare ricordi indimenticabili!
+            </div>
+            
+            <div class="iban-section">
+                IBAN: IT87V0301503200000004369387<br>
+                Cavaliere Danilo e Tangari Lucia
+            </div>
+            
+            <div class="heart">♡</div>
+            
+            <div class="names">Luciana e Danilo</div>
         </div>
-        
-        <div class="thanks">grazie di cuore!</div>
-        
-        <div class="main-text">
-            La vostra presenza sarà per noi il regalo più grande, ma se lo desiderate, potrete contribuire alla realizzazione del nostro viaggio di nozze, aiutandoci a creare ricordi indimenticabili!
-        </div>
-        
-        <div class="iban-section">
-            IBAN: IT87V0301503200000004369387<br>
-            Cavaliere Danilo e Tangari Lucia
-        </div>
-        
-        <div class="heart">♡</div>
-        
-        <div class="names">Luciana e Danilo</div>
     </div>
 </body>
 </html>
